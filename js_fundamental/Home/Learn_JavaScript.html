@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+</head>
+<body>
+    
+    <h2>What Can JavaScript do?</h2>
+        <!--simple button work-->
+
+        <h3>Exercise 3.0</h3>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Javascript"'>Click Me</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Javascript can cange HTML content'"">Click Again!</button>
+        <!-- Look at the quotes. I can use single quotes or double quotes. But theere is different if you look closely you can see the difference. If I use single quotes outside I should have use double quotes inside on the other hand if I use double quotes outside I have to use single quotes inside. Magic HAH! Move the cheese. Feel the change and prepared for the change. Allah will help you.-->
+
+
+        <!--Change HTML attribute value-->
+        <h3>Exercise 2</h3>
+        <p>JavaScript can change HTML attribute values.</p>
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button onclick='document.getElementById("myImage").src="pic_bulbon.gif"'>Turn on the light</button>
+        <img id="myImage" src="pic_bulboff.gif" style="width: 100px;">
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+        <p>What do you want to choose for travel</p>
+        <img id="travel" src="problem.png">
+        <button onclick="document.getElementById('travel').src='bycicle.png'">Bike</button>
+        <button onclick="document.getElementById('travel').src='bike.png'">Bicycle</button>
+        <button onclick="document.getElementById('travel').src='bus.png'">Bus</button>
+        <button onclick="document.getElementById('travel').src='train.png'">Train</button>
+        <button onclick="document.getElementById('travel').src='plane.png'">Plane</button>
+        <button onclick="document.getElementById('travel').src='sport-car.png'">CAR</button>
+
+        <!--Changis the style of an HTML element, is a variant of changing an HTML attribute-->
+        <h3>Exercise 3</h3>
+        <p id="demo3">Javascript can chang HTML Style</p>
+        <button type="button"
+        onclick="document.getElementById('demo3').style.fontSize='35px'">Increase Font Size</button>
+        
+        <!--Hiding HTML elements can be done by changing the "display" style-->
+        <h3>Exercise 4 </h3>
+        <p id="demo4">Javascript can hide HTML element</p>
+        <button type="button"
+        onclick="document.getElementById('demo4').style.display='none'">Hide</button>
+        <button type="button"
+        onclick="document.getElementById('demo4').style.display='block'">wanna bring it again!
+    </button>
+
+
+    <!--JavaScript in script tag-->
+    <h3>Exercise 5</h3>
+    <p id="demo5"></p>
+    <script>
+        document.getElementById("demo5").innerHTML= "JavaScript in script tag";
+    </script>
+
+    <!--A javascript function is placed in the <body> section-->
+        <h3> Exercise 6</h3>
+        <p id="demo6">A paragraph</p>
+        <button type="button" onclick="myFunction()">Try it!</button>
+        <script>
+            function myFunction() {
+                document.getElementById("demo6").innerHTML = "paragraph changed";
+            }
+        </script>
+
+
+    <!--Demo External Javascript-->
+    <h3>Exercise 7</h3>
+    <p id="demo7">A paragraph</p>
+    <button type="button" 
+    onclick="myFunction7()">Try it</button>
+    <script src="Learn_javaScript.js"></script>
+
+    <!--JavaScript Display possibilites-->
+
+    <!--Using innerHTML-->
+    <h3>Exercise 8</h3>
+    <p>To access an HTML element, JavaScript can use the document.getElementById(id) method. The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+    </p>
+    <p id="demo8"></p>
+    <script>
+        document.getElementById("demo8").innerHTML = 5+6;
+    </script>
+
+    <!--using document.write()-->
+    <h3>Exercise 9</h3>
+    <p>The document.write() method should only be used for testing</p>
+    <p>My first paragraph</p>
+    <script>
+        document.write(5+4);
+    </script>
+
+    <!--Using window.alret()-->
+    <h3>Exercise 10</h3>
+    <p>window.alert() for alert box</p>
+    <script>
+        window.alert(5+10);
+    </script>
+    <p>I can skip the window keyword. <br> In javascript, the window object is the global scope object, that means that variables, properties, and method by default belong to the window object. This also means that specifing the window keyword is optinal:</p>
+    <script>
+        alert(10+10);
+    </script>
+
+    <!--Using console.log()-->
+    <p>For debugging purpose, I can call the console.log() method in the browserto display data.</p>
+    <p>In console panel you can see the sumation of 100 & 100</p>
+    <script>
+        console.log(100+100);
+    </script>
+
+
+    <!--JavaScript Statements-->
+    <h2>JavaScript Statements</h2>
+    <p>A computer program is a list of "intrustion" to be "executed" by a computer. <br> In a programming language, these programming instructions are called Statements. A javascript program is a list of programming statements. <br> In HTML, Javascript progams are executed by the web browser.</p>
+    <p>Javascript statements are composed of: values, operators, expressions, keywords and comments. <br> Most javascript programs contain many javascript statements. <br> the satements are executed, one by one, in the same order as they are written. <br> Javascript programs(and javascript statements) are often called JavaScript code. </p>
+
+    <h3>Exercise 11</h3>
+    <p id="demo11"></p>
+    <script>
+        let x,y,z; // statement 1 
+        x = 5; // statement 2
+        y = 6; // statement 3
+        z = x+y; // statement 4 
+        document.getElementById("demo11").innerHTML = 
+        "The value of z is "+z+". ";
+    </script>
+    <!--Semicolns ;-->
+    <h3>Exercise 12</h3>
+    <p>Semicolons separate JavaScript statements.</p>
+    <p id="demo12"></p>
+    <script>
+        let a,b,c; // Declare 3 variables
+        a = 12; // Assign the value 5 to a 
+        b = 6; // Assign the value 6 to b
+        c = a+b; // Assign the sum of a and b to c
+        document.getElementById("demo12").innerHTML = c;
+    </script>
+    <h3>Exercise 13</h3>
+    <p>When satements are saparated by Semicolons, multiple statements on one line allowed.         </p>
+    <p id="demo13"></p>
+
+    <script>
+    let a13, b13, c13;
+    a13 = 10; 
+    b13 = 6; 
+    c13 = a13 + b13;
+    document.getElementById("demo13").innerHTML = c13;
+    </script>
+
+    <h3>Exercise 14</h3>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+</body>
+</html>
