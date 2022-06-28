@@ -41,4 +41,12 @@ function myFunction6() {
 document.getElementById("demo6_2").innerHTML = typeof carName;
 
 
+//Exercise 7
+
+function myFunction7(){
+    alert("Hello world!");
+}
+myFunction7();
+
+
 
