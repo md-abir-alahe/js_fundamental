@@ -195,3 +195,13 @@
 
     document.getElementById("demo27").innerHTML = myArry[0];
 }
+//Exercise 28
+{
+    let str = "Please locate where 'locate' occurs!";
+    document.getElementById("demo28").innerHTML = str.indexOf("locate");
+}
+//Exercise 29
+{
+    let str = "Please locate where 'locate' occurs!";
+    document.getElementById("demo29").innerHTML = str.lastIndexOf("locate");
+}
