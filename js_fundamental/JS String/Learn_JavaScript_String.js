@@ -205,3 +205,34 @@
     let str = "Please locate where 'locate' occurs!";
     document.getElementById("demo29").innerHTML = str.lastIndexOf("locate");
 }
+//Exercise 30
+{
+    let str = "Please locate where 'locate' occurs!";
+    document.getElementById("demo30").innerHTML = str.lastIndexOf("locate", 15);
+}
+//Exercise 31
+{
+    let str = "Please locate where 'locate' occurs!";
+    document.getElementById("demo31").innerHTML = str.search("locate");
+}
+//Exercise 32
+{
+    let text = "The rain in SPAIN stays mainly in the plain";
+    document.getElementById("demo32").innerHTML = text.match(/ain/g);
+}
+//Exercise 33
+{
+    let text = "The rain in SPAIN staus mainly in the plain";
+    document.getElementById("demo33").innerHTML = text.match(/ain/gi);
+}
+//Exercise 34
+{
+    let text = "Hello world, welcome to the universe.";
+    document.getElementById("demo34").innerHTML = text.includes("world");
+}
+//Exercise 35
+{
+    let text = "Hello world, wecome to the universe.";
+    document.getElementById("demo35").innerHTML = text.includes("world", 12);
+
+}
